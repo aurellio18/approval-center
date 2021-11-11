@@ -1,10 +1,10 @@
 <template>
   <div class="cover">
-      <a class="back" href="/"> <img id="ic-back" src="../assets/back.png" alt=""></a>
+      <a class="back" href="/approval"> <img id="ic-back" src="../assets/back.png" alt=""></a>
       <img src="../assets/img_cover_approval_center.png" alt="">
     
     <div class="content">
-        <div class="card">
+        <button class="card" @click.prevent="onPostsClick()">
             <div class="card-right">
                 <h1>38</h1>
                 <p>Outstanding Approval</p>
@@ -12,17 +12,17 @@
             <div class="card-left">
                 <img src="../assets/img_outstanding_approval.png" alt="">
             </div>
-        </div>
+        </button>
         <div class="form">
             <h1>Menunggu Persetujuan</h1>
             <p>Segera tindak lanjuti permintaan anda</p>
             <div class="itreq">
                 <div class="logoit"></div>
                 <h2>IT Request Tracking</h2>
-                <div class="request" id="it">
+                <button class="request" id="it" @click.prevent="onReqClick()">
                     <h3>30</h3>
                     <p>Request</p>
-                </div>
+                </button>
             </div>
             <div class="trreq">
                 <div class="logotr"></div>
@@ -41,9 +41,14 @@
 <script>
 export default {
   name: 'Approval',
-  props: {
-    msg: String
-  }
+  methods: {
+      onPostsClick() {
+          this.$router.push('/out');
+      },
+      onReqClick() {
+          this.$router.push('/itRequest');
+      },
+  },
 }
 </script>
 
@@ -51,7 +56,7 @@ export default {
 <style scoped>
 .cover{
     width: 360px;
-    height: auto;
+    height: 640px;
 }
 
 .cover .back{
@@ -91,6 +96,8 @@ export default {
 }
 
 .card{
+    border: none;
+    cursor: pointer;
     position: static;
     width: 328px;
     height: 85px;
@@ -104,6 +111,7 @@ export default {
     margin: 0 15px;
     margin-top: 34px;
     overflow: hidden;
+    
 }
 
 .card-right h1{
@@ -302,5 +310,10 @@ h2{
     margin: 2px 0px;
     width: 52px;
     margin-left: 32px;
+}
+
+#it {
+    border: none;
+    background-color: white;
 }
 </style>
