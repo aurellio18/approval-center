@@ -8,6 +8,7 @@ import Qr from './components/qr.vue'
 import Code from './components/Code.vue'
 import Input from './components/input.vue'
 import checkin from './components/checkin.vue'
+import confirm from './components/confirm.vue'
 import { createRouter, createWebHistory } from 'vue-router';
 
 
@@ -43,6 +44,10 @@ const routes =[
     {
         path: '/checkin',
         component: checkin,
+    },
+    {
+        path: '/confirm',
+        component: confirm,
     },
 ]
 

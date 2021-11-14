@@ -108,12 +108,11 @@ export default {
 
     .head h1 {
     position: absolute;
-    width: 145px;
+    width: 150px;
     top: 127px;
     left: 108px;
-    font-family: Roboto;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 550;
     font-size: 16px;
     line-height: 19px;
     margin: 0 auto;
@@ -126,7 +125,6 @@ export default {
     width: 176px;
     top: 148px;
     left: 92px;
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -157,7 +155,6 @@ export default {
     left: 27.99%;
     right: 27.99%;
     top: 420px;
-    font-family: Roboto;
     font-style: italic;
     font-weight: normal;
     font-size: 12px;
@@ -175,7 +172,6 @@ export default {
     height: 14px;
     left: calc(50% - 240px/2);
     bottom: 89px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;

@@ -136,7 +136,6 @@ export default {
     right: 0%;
     top: 69.81%;
     bottom: 0%;
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -161,19 +160,19 @@ export default {
 
 .form h1{
     position: static;
-    width: 158px;
+    width: 165px;
     height: 19px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    text-align: left;
     color: #171717;
     flex: none;
     order: 0;
     flex-grow: 0;
     margin-top: 32px;
-    margin-left: 16px;
+    margin-left: 20px;
     margin-bottom: 0;
 }
 
@@ -239,7 +238,6 @@ export default {
 }
 
 h2{
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

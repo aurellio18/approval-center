@@ -48,7 +48,6 @@ export default {
     height: 23px;
     left: 16px;
     top: 90px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -97,7 +96,6 @@ export default {
     border-radius: 6px;
     text-decoration: none;
     border: none;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -121,7 +119,6 @@ export default {
         border-radius: 6px;
         text-decoration: none;
         border: none;
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
