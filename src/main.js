@@ -9,6 +9,7 @@ import Code from './components/Code.vue'
 import Input from './components/input.vue'
 import checkin from './components/checkin.vue'
 import confirm from './components/confirm.vue'
+import scanner from './components/scanner.vue'
 import { createRouter, createWebHistory } from 'vue-router';
 
 
@@ -48,6 +49,10 @@ const routes =[
     {
         path: '/confirm',
         component: confirm,
+    },
+    {
+        path: '/scanner',
+        component: scanner,
     },
 ]
 
