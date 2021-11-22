@@ -108,9 +108,9 @@ export default {
 
     .head h1 {
     position: absolute;
-    width: 150px;
+    width: 155px;
     top: 127px;
-    left: 108px;
+    left: 102px;
     font-style: normal;
     font-weight: 550;
     font-size: 16px;

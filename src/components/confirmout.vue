@@ -34,11 +34,11 @@
                 </svg> 
             </div>
             <div id="gambar">
-                <img id="img" src="../assets/img-confirmation-trip.svg" alt="">
-                <h1>Selamat Berkendara</h1>
-                <p>Patuhi protokol kesehatan dan tetap waspada</p>
+                <img id="img" src="../assets/dialog/empty-down.svg" alt="">
+                <h1>Terima Kasih</h1>
+                <p>Periksa kembali barang bawaan anda</p>
             </div>
-            <button id="accept" @click.prevent="onAcceptClick()">Check In</button>
+            <button id="accept" @click.prevent="onAcceptClick()">Check Out</button>
         </div>
         
     </div>
@@ -46,7 +46,7 @@
 
 <script>
 export default {
-    name: 'confirm',
+    name: 'confirmout',
     methods: {
       onAcceptClick() {
           this.$router.push('/qr');
@@ -56,51 +56,6 @@ export default {
 </script>
 
 <style scoped>
-#gambar h1{
-position: absolute;
-width: 155px;
-height: 19px;
-left: 43.5px;
-top: 140px;
-
-/* subtitle/subtitle 1 */
-font-style: normal;
-font-weight: 550;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-text-align: center;
-color: #146BB8;
-margin: 8px 0px;
-}
-
-#gambar p {
-    position: static;
-width: 232px;
-height: 38px;
-left: 0px;
-
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-text-align: center;
-
-/* primary/blue 100 */
-
-color: #146BB8;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 8px 0px;
-}
-
 #accept{
     display: flex;
     flex-direction: column;
@@ -459,5 +414,50 @@ top: 24px;
 background: #FFFFFF;
 /* flat shadow */
 box-shadow: 0px 0px 5px rgba(69, 93, 121, 0.15);
+}
+
+#gambar h1{
+position: absolute;
+width: 155px;
+height: 19px;
+left: 43.5px;
+top: 140px;
+
+/* subtitle/subtitle 1 */
+font-style: normal;
+font-weight: 550;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+color: #146BB8;
+margin: 8px 0px;
+}
+
+#gambar p {
+    position: static;
+width: 232px;
+height: 38px;
+left: 0px;
+
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+text-align: center;
+
+/* primary/blue 100 */
+
+color: #146BB8;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 8px 0px;
 }
 </style>

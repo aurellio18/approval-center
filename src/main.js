@@ -10,6 +10,8 @@ import Input from './components/input.vue'
 import checkin from './components/checkin.vue'
 import confirm from './components/confirm.vue'
 import scanner from './components/scanner.vue'
+import checkout from './components/checkout.vue'
+import confirmout from './components/confirmout.vue'
 import { createRouter, createWebHistory } from 'vue-router';
 
 
@@ -49,6 +51,14 @@ const routes =[
     {
         path: '/confirm',
         component: confirm,
+    },
+    {
+        path: '/checkout',
+        component: checkout,
+    },
+    {
+        path: '/confirmout',
+        component: confirmout,
     },
     {
         path: '/scanner',

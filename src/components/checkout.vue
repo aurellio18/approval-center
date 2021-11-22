@@ -22,24 +22,21 @@
                 <p class="desc" id="destdesc">Destination</p>
                 </div>
             </div>
-            <div class="sub-card" id="card2"></div>
-            <div class="sub-card" id="card3"></div>
         </div>
-        <button @click.prevent="onInputClick()">Check In</button>
+        <button @click.prevent="onInputClick()">Check Out</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'checkin',
+    name: 'checkout',
     methods: {
       onInputClick() {
-          this.$router.push('/confirm');
+          this.$router.push('/confirmout');
       },
     },
 }
 </script>
-
 
 <style scoped>
 .main{
@@ -161,12 +158,6 @@ export default {
 }
 #card1{
     top: 0px;
-}
-#card2{
-    top: 158px;
-}
-#card3{
-    top: 316px;
 }
 
 .card .sub-card .content{
@@ -311,13 +302,5 @@ button{
     position: absolute;
     top: 600px;
 }
-
-
-
-
-
-
-
-
 
 </style>

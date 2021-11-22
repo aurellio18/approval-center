@@ -91,7 +91,7 @@ export default {
 
     .head h1{
     position: static;
-    width: 144px;
+    width: 154px;
     height: 23px;
     left: 71.5px;
     top: 0px;

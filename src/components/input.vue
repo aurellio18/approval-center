@@ -44,7 +44,7 @@ export default {
 
     .content p{
     position: absolute;
-    width: 144px;
+    width: 154px;
     height: 23px;
     left: 16px;
     top: 90px;
